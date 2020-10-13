@@ -1,22 +1,22 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
-using Radiometry.Authorization.Models;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
+using System.Threading.Tasks;
 
-namespace Radiometry.Authorization.Controllers
+namespace TokenApp
 {
-	public class AccountController : Controller
+    public class AccountController : Controller
     {
-        private readonly RadiometryUserContext context;
-
-        public AccountController(RadiometryUserContext context)
-		{
-            this.context = context;
-		}
+        // тестовые данные вместо использования базы данных
+        private List<Person> people = new List<Person>
+        {
+            new Person {Login="admin@gmail.com", Password="12345", Role = "admin" },
+            new Person { Login="qwerty@gmail.com", Password="55555", Role = "user" }
+        };
 
         [HttpPost("/token")]
         public IActionResult Token(string username, string password)
@@ -49,8 +49,7 @@ namespace Radiometry.Authorization.Controllers
 
         private ClaimsIdentity GetIdentity(string username, string password)
         {
-            User person = this.context.Users.FirstOrDefault(user => user.Login == username && user.Password == password);
-
+            Person person = people.FirstOrDefault(x => x.Login == username && x.Password == password);
             if (person != null)
             {
                 var claims = new List<Claim>
@@ -58,16 +57,13 @@ namespace Radiometry.Authorization.Controllers
                     new Claim(ClaimsIdentity.DefaultNameClaimType, person.Login),
                     new Claim(ClaimsIdentity.DefaultRoleClaimType, person.Role)
                 };
-
-                ClaimsIdentity claimsIdentity = new ClaimsIdentity(
-                    claims,
-                    "Token",
-                    ClaimsIdentity.DefaultNameClaimType,
+                ClaimsIdentity claimsIdentity =
+                new ClaimsIdentity(claims, "Token", ClaimsIdentity.DefaultNameClaimType,
                     ClaimsIdentity.DefaultRoleClaimType);
-                
                 return claimsIdentity;
             }
 
+            // если пользователя не найдено
             return null;
         }
     }

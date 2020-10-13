@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Radiometry.iOS", "Radiometr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Radiometry", "Radiometry\Radiometry\Radiometry.csproj", "{DD42CF80-262A-4A32-95E7-875A7C28AC84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Radiometry.Authorization", "Radiometry.Authorization\Radiometry.Authorization.csproj", "{2D904C33-2F8E-415D-B528-D8B544D1DBAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Radiometry.Authorization", "Radiometry.Authorization\Radiometry.Authorization.csproj", "{2D904C33-2F8E-415D-B528-D8B544D1DBAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

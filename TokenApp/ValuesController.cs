@@ -1,9 +1,13 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace Radiometry.Authorization.Controllers
+namespace TokenApp
 {
-	[ApiController]
+    [ApiController]
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
