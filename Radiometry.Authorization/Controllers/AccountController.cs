@@ -6,9 +6,9 @@ namespace Radiometry.Authorization.Controllers
 {
 	public class AccountController : Controller
 	{
-		private readonly IAuthorizationService authorizationService;
+		private readonly IUserAuthorizationService authorizationService;
 
-		public AccountController(IAuthorizationService authorizationService)
+		public AccountController(IUserAuthorizationService authorizationService)
 		{
 			this.authorizationService = authorizationService;
 		}

@@ -2,7 +2,7 @@
 
 namespace Radiometry.Authorization.Services
 {
-	public interface IAuthorizationService
+	public interface IUserAuthorizationService
 	{
 		ClaimsIdentity GetIdentity(string username, string password);
 

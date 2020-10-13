@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -10,55 +9,57 @@ using Radiometry.Authorization.Services;
 namespace Radiometry.Authorization
 {
 	public class Startup
-    {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+	{
+		public IConfiguration Configuration { get; }
 
-        public IConfiguration Configuration { get; }
+		public Startup(IConfiguration configuration)
+		{
+			Configuration = configuration;
+		}
 
-        public void ConfigureServices(IServiceCollection services)
-        {
-            string connection = Configuration.GetConnectionString("DefaultConnection");
-            services.AddDbContext<RadiometryUserContext>(options =>
-                options.UseSqlServer(connection));
+		public void ConfigureServices(IServiceCollection services)
+		{
+			string connection = Configuration.GetConnectionString("DefaultConnection");
+			services.AddDbContext<RadiometryUserContext>(options =>
+				options.UseSqlServer(connection));
 
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                    .AddJwtBearer(options =>
-                    {
-                        options.RequireHttpsMetadata = false;
-                        options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
-                        {
-                            ValidateIssuer = true,
-                            ValidIssuer = AuthOptions.ISSUER,
-                            ValidateAudience = true,
-                            ValidAudience = AuthOptions.AUDIENCE,
-                            ValidateLifetime = true,
-                            IssuerSigningKey = AuthOptions.GetSymmetricSecurityKey(),
-                            ValidateIssuerSigningKey = true,
-                        };
-                    });
+			services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+					.AddJwtBearer(options =>
+					{
+						options.RequireHttpsMetadata = false;
+						options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+						{
+							ValidateIssuer = true,
+							ValidIssuer = AuthOptions.ISSUER,
+							ValidateAudience = true,
+							ValidAudience = AuthOptions.AUDIENCE,
+							ValidateLifetime = true,
+							IssuerSigningKey = AuthOptions.GetSymmetricSecurityKey(),
+							ValidateIssuerSigningKey = true,
+						};
+					});
 
-            services.AddTransient<Services.IAuthorizationService, AuthorizationService>();
-        }
+			services.AddControllers();
 
-        public void Configure(IApplicationBuilder app)
-        {
-            app.UseDeveloperExceptionPage();
+			services.AddTransient<IUserAuthorizationService, UserAuthorizationService>();
+		}
 
-            app.UseDefaultFiles();
-            app.UseStaticFiles();
+		public void Configure(IApplicationBuilder app)
+		{
+			app.UseDeveloperExceptionPage();
 
-            app.UseRouting();
+			app.UseDefaultFiles();
+			app.UseStaticFiles();
 
-            app.UseAuthentication();
-            app.UseAuthorization();
+			app.UseRouting();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapDefaultControllerRoute();
-            });
-        }
-    }
+			app.UseAuthentication();
+			app.UseAuthorization();
+
+			app.UseEndpoints(endpoints =>
+			{
+				endpoints.MapDefaultControllerRoute();
+			});
+		}
+	}
 }

@@ -8,11 +8,11 @@ using System.Security.Claims;
 
 namespace Radiometry.Authorization.Services
 {
-	public class AuthorizationService : IAuthorizationService
+	public class UserAuthorizationService : IUserAuthorizationService
 	{
 		private readonly RadiometryUserContext context;
 
-		public AuthorizationService(RadiometryUserContext context)
+		public UserAuthorizationService(RadiometryUserContext context)
 		{
 			this.context = context;
 		}
