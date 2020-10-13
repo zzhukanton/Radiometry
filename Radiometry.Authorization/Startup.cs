@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Radiometry.Authorization.Models;
+using Radiometry.Authorization.Services;
 
 namespace Radiometry.Authorization
 {
@@ -37,7 +39,8 @@ namespace Radiometry.Authorization
                             ValidateIssuerSigningKey = true,
                         };
                     });
-            services.AddControllersWithViews();
+
+            services.AddTransient<Services.IAuthorizationService, AuthorizationService>();
         }
 
         public void Configure(IApplicationBuilder app)
