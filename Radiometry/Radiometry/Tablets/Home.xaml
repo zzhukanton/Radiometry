@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Radiometry.Home">
+
+	<StackLayout>
+		<Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+			<Label Text="Планшеты" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+		</Frame>
+		<Button Text="Создать"/>
+		<Label Text="История" FontSize="Title" Padding="30,10,30,10"/>
+		<TableView Intent="Data">
+			<TableView.Root>
+				<TableRoot>
+					<TableSection>
+						<TextCell Text="Планшет 1 (дата?)"/>
+						<ImageCell Text="Тут кнопка открыть будет"/>
+					</TableSection>
+					<TableSection>
+						<TextCell Text="Планшет 2"/>
+						<ImageCell Text="Тут кнопка открыть будет"/>
+					</TableSection>
+					<TableSection>
+						<TextCell Text="Планшет 3"/>
+						<ImageCell Text="Тут кнопка открыть будет"/>
+					</TableSection>
+				</TableRoot>
+			</TableView.Root>
+		</TableView>
+	</StackLayout>
+</ContentPage>

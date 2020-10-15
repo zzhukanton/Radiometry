@@ -23,5 +23,17 @@
     <Compile Update="Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Tablets\Isolines.xaml.cs">
+      <DependentUpon>Isolines.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Tablets\Anomaly.xaml.cs">
+      <DependentUpon>Anomaly.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Tablets\Tablet.xaml.cs">
+      <DependentUpon>Tablet.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Tablets\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

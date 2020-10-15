@@ -8,9 +8,9 @@ using Xamarin.Forms;
 
 namespace Radiometry
 {
-	public partial class Login : ContentPage
+	public partial class Anomaly : ContentPage
 	{
-		public Login()
+		public Anomaly()
 		{
 			InitializeComponent();
 		}

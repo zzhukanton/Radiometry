@@ -19,12 +19,8 @@
                 </FormattedString>
             </Label.FormattedText>
         </Label>
-		<Button Text="Войти">
-			
-		</Button>
-		<Button Text="Создать">
-
-		</Button>
+		<Button Text="Войти"/>
+		<Button Text="Создать"/>
 	</StackLayout>
 
 </ContentPage>
