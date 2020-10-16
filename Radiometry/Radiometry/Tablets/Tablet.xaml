@@ -10,7 +10,8 @@
 		<Label Text="Дата создания: 12.12.2020" FontSize="Title" Padding="30,10,30,10"/>
 		<Button Text="Изолинии (вид)"/>
 		<Button Text="Аномалии (вид - цветной)"/>
-		<Button Text="Профили/пикеты (графики)"/>
+		<Button Text="Профили (графики)"/>
+		<Button Text="Пикеты (графики)"/>
 		<Button Text="Назад"/>
 	</StackLayout>
 

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Radiometry.New">
+
+	<StackLayout>
+		<Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+			<Label Text="Новый планшет" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+		</Frame>
+		<Label Text="Название" FontSize="Title" Padding="30,10,30,10"/>
+		<Entry x:Name="Title" Placeholder="Название"/>
+
+		<Label Text="Число точек Х" FontSize="Title" Padding="30,10,30,10"/>
+		<Entry x:Name="countX" Placeholder="0"/>
+
+		<Label Text="Число точек Y" FontSize="Title" Padding="30,10,30,10"/>
+		<Entry x:Name="countY" Placeholder="0"/>
+
+		<Label Text="Шаг по Х" FontSize="Title" Padding="30,10,30,10"/>
+		<Entry x:Name="deltaX" Placeholder="0"/>
+
+		<Label Text="Шаг по Y" FontSize="Title" Padding="30,10,30,10"/>
+		<Entry x:Name="deltaY" Placeholder="0"/>
+
+		<Label Text="Перед началом измерений займите требуемое начальное положение и нажмите Начать" FontSize="Title" Padding="30,10,30,10"/>
+
+		<Button Text="Начать"/>
+		<Button Text="Назад"/>
+	</StackLayout>
+</ContentPage>

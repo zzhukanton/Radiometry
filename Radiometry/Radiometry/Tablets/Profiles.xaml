@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Radiometry.Profiles">
+
+    <StackLayout>
+		<Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+			<Label Text="Профили" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+		</Frame>
+		<Label Text="Профиль (Х):" FontSize="Title" Padding="30,10,30,10"/>
+		<Picker x:Name="pickerX" >
+			<Picker.Items>
+				<x:String>1</x:String>
+				<x:String>2</x:String>
+				<x:String>3</x:String>
+				<x:String>4</x:String>
+				<x:String>5</x:String>
+			</Picker.Items>
+		</Picker>
+		<Button Text="Показать"/>
+		<Image Source=""/> <!--изображение графика профиля-->
+		<Label Text="Детали:" FontSize="Title" Padding="30,10,30,10"/>
+		<Label Text="Среднее: 12" FontSize="Title" Padding="30,10,30,10"/>
+		<Label Text="Максимальное: 12" FontSize="Title" Padding="30,10,30,10"/>
+		<Label Text="Минимальное: 12" FontSize="Title" Padding="30,10,30,10"/>
+		<Button Text="Назад"/>
+	</StackLayout>
+
+</ContentPage>
