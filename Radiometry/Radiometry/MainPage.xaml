@@ -1,26 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Radiometry.MainPage">
+             x:Class="Radiometry.MainPage"
+			 BackgroundColor="#efdecd">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Радиометрия" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+		<Frame Padding="24" CornerRadius="0" BackgroundColor="#efdecd">
+			<Label Text="Радиометрия" HorizontalTextAlignment="Center" FontSize="36" FontFamily="sans-serif" TextColor="Black"/>
         </Frame>
-        <Label Text="Начните работу прямо сейчас" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Используйте возможности мобильных устройств для эффективной работы" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Узнать больше о радиометрии "/>
-                        <Span Text="*Ссылка на описание метода радиометрии" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
-		<Button Text="Войти"/>
-		<Button Text="Создать"/>
+		<CarouselView x:Name="MainCarousel" ItemsSource="{Binding WelcomeItems}">
+			<!--IndicatorView="MainIndicator"-->
+			<CarouselView.ItemTemplate>
+				<DataTemplate>
+					<StackLayout>
+						<Frame HasShadow="True"
+								BackgroundColor="#efdecd"
+								CornerRadius="5"
+								Margin="20"
+								HeightRequest="300"
+								HorizontalOptions="Center"
+								VerticalOptions="CenterAndExpand">
+							<StackLayout>
+								<Image Source="{Binding ImageUrl}"
+										Aspect="AspectFill"
+										HeightRequest="150"
+										WidthRequest="150"
+										HorizontalOptions="Center" />
+								<Label Text="{Binding Message}" HorizontalOptions="Center" />
+							</StackLayout>
+						</Frame>
+					</StackLayout>
+				</DataTemplate>
+			</CarouselView.ItemTemplate>
+		</CarouselView>
+		<!--<IndicatorView x:Name="MainIndicator"
+						IndicatorColor="LightGray"
+						SelectedIndicatorColor="DarkGray"
+						HorizontalOptions="Center" />-->
+		<Button Text="Войти" BackgroundColor="#00a86b" TextColor="White" Margin="30,10,30,10"/>
+		<Button Text="Создать профиль" BackgroundColor="#00a86b" TextColor="White" Margin="30,10,30,10"/>
 	</StackLayout>
 
 </ContentPage>
