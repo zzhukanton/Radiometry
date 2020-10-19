@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Radiometry.Profiles">
+             x:Class="Radiometry.Profiles"
+			 BackgroundColor="#efdecd">
 
     <StackLayout>
-		<Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-			<Label Text="Профили" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+		<Frame BackgroundColor="#efdecd" Padding="24" CornerRadius="0">
+			<Label Text="Профили" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"/>
 		</Frame>
 		<Label Text="Профиль (Х):" FontSize="Title" Padding="30,10,30,10"/>
 		<Picker x:Name="pickerX" >
@@ -17,13 +18,13 @@
 				<x:String>5</x:String>
 			</Picker.Items>
 		</Picker>
-		<Button Text="Показать"/>
+		<Button Text="Показать" BackgroundColor="#00a86b" TextColor="White"/>
 		<Image Source=""/> <!--изображение графика профиля-->
 		<Label Text="Детали:" FontSize="Title" Padding="30,10,30,10"/>
 		<Label Text="Среднее: 12" FontSize="Title" Padding="30,10,30,10"/>
 		<Label Text="Максимальное: 12" FontSize="Title" Padding="30,10,30,10"/>
 		<Label Text="Минимальное: 12" FontSize="Title" Padding="30,10,30,10"/>
-		<Button Text="Назад"/>
+		<Button Text="Назад" BackgroundColor="#00a86b" TextColor="White"/>
 	</StackLayout>
 
 </ContentPage>

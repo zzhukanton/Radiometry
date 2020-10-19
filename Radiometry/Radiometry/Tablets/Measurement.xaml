@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Radiometry.Measurement">
+             x:Class="Radiometry.Measurement"
+			 BackgroundColor="#efdecd">
 
 	<StackLayout>
-		<Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-			<Label Text="Название планшета" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+		<Frame BackgroundColor="#efdecd" Padding="24" CornerRadius="0">
+			<Label Text="Название планшета" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"/>
 		</Frame>
 		<Label Text="Пройдено точек: 12 из 25" FontSize="Title" Padding="30,10,30,10"/>
 		<Image Source="" /> <!--изображение сетки с прогрессом-->
@@ -13,8 +14,8 @@
 		<Label Text="Значение" FontSize="Title" Padding="30,10,30,10"/>
 		<Entry x:Name="value" Placeholder="0"/>
 
-		<Button Text="Добавить"/>
-		<Button Text="Завершить"/> <!--появляется по завершению-->
-		<Button Text="Назад"/>
+		<Button Text="Добавить" BackgroundColor="#00a86b" TextColor="White"/>
+		<Button Text="Завершить" BackgroundColor="#00a86b" TextColor="White"/> <!--появляется по завершению-->
+		<Button Text="Назад" BackgroundColor="#00a86b" TextColor="White"/>
 	</StackLayout>
 </ContentPage>

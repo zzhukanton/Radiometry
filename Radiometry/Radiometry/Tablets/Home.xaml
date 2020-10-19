@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Radiometry.Home">
+             x:Class="Radiometry.Home"
+			 BackgroundColor="#efdecd">
 
 	<StackLayout>
-		<Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-			<Label Text="Планшеты" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+		<Frame BackgroundColor="#efdecd" Padding="24" CornerRadius="0">
+			<Label Text="Планшеты" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"/>
 		</Frame>
-		<Button Text="Создать"/>
+		<Button Text="Создать" BackgroundColor="#00a86b" TextColor="White"/>
 		<Label Text="История" FontSize="Title" Padding="30,10,30,10"/>
 		<TableView Intent="Data">
 			<TableView.Root>
