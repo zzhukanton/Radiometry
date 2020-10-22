@@ -24,6 +24,16 @@ namespace Radiometry
 			};
 			this.BindingContext = this;
 		}
+
+		private async void Login_Clicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new Login());
+		}
+
+		private async void Register_Clicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new Register());
+		}
 	}
 
 	public class WelcomeItem 

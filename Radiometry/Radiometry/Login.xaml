@@ -2,17 +2,53 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Radiometry.Login"
-			 BackgroundColor="#efdecd">
+			 BackgroundColor="#efdecd"
+			 Title="Login">
 
 	<StackLayout>
-		<Frame BackgroundColor="#efdecd" Padding="24" CornerRadius="0">
-			<Label Text="Войти" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+		<Frame 
+			BackgroundColor="#efdecd" 
+			Padding="24" 
+			CornerRadius="0">
+			<Label 
+				Text="Войти" 
+				HorizontalTextAlignment="Center" 
+				TextColor="Black" 
+				FontSize="36"/>
 		</Frame>
-		<Label Text="Логин" FontSize="Title" Padding="30,10,30,10"/>
-		<Entry x:Name="LoginEntry" Placeholder="Логин"/>
-		<Label Text="Пароль" FontSize="Title" Padding="30,10,30,10"/>
-		<Entry x:Name="PasswordEntry" Placeholder="Пароль" IsPassword="true"/>
-		<Button Text="Войти" BackgroundColor="#00a86b" TextColor="White"/>
-		<Button Text="Назад" BackgroundColor="#00a86b" TextColor="White"/>
+		<Label 
+			Text="Логин" 
+			FontSize="Title" 
+			Padding="30,10,30,0" 
+			TextColor="Black"/>
+		<Entry 
+			x:Name="LoginEntry" 
+			Placeholder="Логин" 
+			Margin="30,10,30,10" 
+			BackgroundColor="White" 
+			ClearButtonVisibility="WhileEditing"/>
+		<Label 
+			Text="Пароль" 
+			FontSize="Title" 
+			Padding="30,10,30,0" 
+			TextColor="Black"/>
+		<Entry 
+			x:Name="PasswordEntry" 
+			Placeholder="Пароль" 
+			IsPassword="true" 
+			Margin="30,10,30,10" 
+			BackgroundColor="White" 
+			ClearButtonVisibility="WhileEditing"/>
+		<Button 
+			Text="Войти" 
+			BackgroundColor="#00a86b" 
+			TextColor="White" 
+			Margin="30,10,30,10"/>
+		<Button 
+			Text="Назад" 
+			BackgroundColor="#00a86b" 
+			TextColor="White" 
+			Margin="30,10,30,10" 
+			Clicked="Button_Clicked"/>
 	</StackLayout>
 </ContentPage>
