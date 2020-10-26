@@ -8,11 +8,19 @@ namespace Radiometry
 		public Login()
 		{
 			InitializeComponent();
+
+			this.BackButton.Clicked += Back_Clicked;
+			this.EnterButton.Clicked += Enter_Clicked;
 		}
 
-		private async void Button_Clicked(object sender, EventArgs e)
+		private async void Back_Clicked(object sender, EventArgs e)
 		{
 			await Navigation.PopAsync();
+		}
+
+		private async void Enter_Clicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new Home());
 		}
 	}
 }

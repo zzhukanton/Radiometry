@@ -38,12 +38,14 @@
 				BackgroundColor="#00a86b" 
 				TextColor="White" 
 				Margin="30,10,30,10"
-				Clicked="Login_Clicked"/>
+				Clicked="Login_Clicked"
+				FontSize="15"/>
 		<Button x:Name="RegisterButton"
 				Text="Создать профиль" 
 				BackgroundColor="#00a86b" 
 				TextColor="White" 
 				Margin="30,10,30,10"
-				Clicked="Register_Clicked"/>
+				Clicked="Register_Clicked"
+				FontSize="15"/>
 	</StackLayout>
 </ContentPage>

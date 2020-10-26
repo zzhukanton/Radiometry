@@ -5,23 +5,65 @@
 			 BackgroundColor="#efdecd">
 
     <StackLayout>
-		<Frame BackgroundColor="#efdecd" Padding="24" CornerRadius="0">
-			<Label Text="Регистрация" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"/>
+		<Frame BackgroundColor="#efdecd" 
+			   Padding="24"
+			   CornerRadius="0">
+			<Label Text="Регистрация"
+				   HorizontalTextAlignment="Center" 
+				   TextColor="Black" 
+				   FontSize="36"/>
 		</Frame>
-
-		<Label Text="Логин" FontSize="16" Padding="30,0,30,0"/>
-		<Entry x:Name="LoginEntry" Placeholder="Логин"/>
-
-		<Label Text="Пароль" FontSize="16" Padding="30,0,30,0"/>
-		<Entry x:Name="PasswordEntry" Placeholder="Пароль" IsPassword="true"/>
-
-		<Label Text="Дополнительная информация" FontSize="Title" Padding="30,10,30,10"/>
-
-		<Label Text="Организация" FontSize="16" Padding="30,0,30,0"/>
-		<Entry x:Name="OrganizationEntry" Placeholder="Организация"/>
-
-		<Button Text="Регистрация" BackgroundColor="#00a86b" TextColor="White"/>
-		<Button Text="Войти" BackgroundColor="#00a86b" TextColor="White"/>
+		<Label Text="Логин" 
+			   FontSize="Title" 
+			   Padding="30,0,30,0"
+			   TextColor="Black"/>
+		<Entry x:Name="LoginEntry" 
+			   Placeholder="Логин"
+			   Margin="30,10,30,10"
+			   BackgroundColor="White"/>
+		<Label Text="Пароль" 
+			   TextColor="Black"
+			   FontSize="Title" 
+			   Padding="30,0,30,0"/>
+		<Entry x:Name="PasswordEntry" 
+			   Placeholder="Пароль" 
+			   IsPassword="true"
+			   Margin="30,10,30,10"
+			   BackgroundColor="White"/>
+		<Label Padding="30,0,30,0">
+			<Label.FormattedText>
+				<FormattedString>
+					<Span Text="Организация" FontSize="Title" TextColor="Black"/>
+					<Span Text=" *" FontSize="Title" TextColor="Red"/>
+				</FormattedString>
+			</Label.FormattedText>
+		</Label>
+		<Entry x:Name="OrganizationEntry" 
+			   Placeholder="Организация"
+			   Margin="30,10,30,10"
+			   BackgroundColor="White"/>
+		<Label Padding="30,0,30,0">
+			<Label.FormattedText>
+				<FormattedString>
+					<Span Text="* " FontSize="Subtitle" TextColor="Red"/>
+					<Span Text=" - необязательное поле" FontSize="Subtitle" TextColor="Black"/>
+				</FormattedString>
+			</Label.FormattedText>
+		</Label>
+		<Button x:Name="CreateButton"
+				Text="Создать"
+				BackgroundColor="#00a86b" 
+				TextColor="White"
+				Margin="30,20,30,10"
+				FontSize="15"
+				Clicked="Create_Clicked"/>
+		<Button x:Name="BackButton"
+				Text="Назад" 
+				BackgroundColor="#00a86b" 
+				TextColor="White"
+				Margin="30,10,30,10"
+				FontSize="15"
+				Clicked="Back_Clicked"/>
 	</StackLayout>
 
 </ContentPage>

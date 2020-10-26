@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Radiometry
@@ -13,6 +8,19 @@ namespace Radiometry
 		public Register()
 		{
 			InitializeComponent();
+
+			this.BackButton.Clicked += Back_Clicked;
+			this.CreateButton.Clicked += Create_Clicked;
+		}
+
+		private async void Back_Clicked(object sender, EventArgs e)
+		{
+			await Navigation.PopAsync();
+		}
+
+		private async void Create_Clicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new Home());
 		}
 	}
 }

@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Radiometry.Login"
 			 BackgroundColor="#efdecd"
-			 Title="Login">
+			 Title="Login"
+			 NavigationPage.HasNavigationBar="false">
 
 	<StackLayout>
 		<Frame 
@@ -40,15 +41,20 @@
 			BackgroundColor="White" 
 			ClearButtonVisibility="WhileEditing"/>
 		<Button 
+			x:Name="EnterButton"
 			Text="Войти" 
 			BackgroundColor="#00a86b" 
 			TextColor="White" 
-			Margin="30,10,30,10"/>
+			Margin="30,120,30,10"
+			FontSize="15"
+			Clicked="Enter_Clicked"/>
 		<Button 
+			x:Name="BackButton"
 			Text="Назад" 
 			BackgroundColor="#00a86b" 
 			TextColor="White" 
 			Margin="30,10,30,10" 
-			Clicked="Button_Clicked"/>
+			Clicked="Back_Clicked"
+			FontSize="15"/>
 	</StackLayout>
 </ContentPage>
