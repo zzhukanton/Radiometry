@@ -5,28 +5,91 @@
 			 BackgroundColor="#efdecd">
 
 	<StackLayout>
-		<Frame BackgroundColor="#efdecd" Padding="24" CornerRadius="0">
-			<Label Text="Планшеты" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"/>
+		<Frame BackgroundColor="#efdecd" 
+			   Padding="24" 
+			   CornerRadius="0">
+			<Label Text="Планшеты" 
+				   HorizontalTextAlignment="Center" 
+				   TextColor="Black" 
+				   FontSize="36"/>
 		</Frame>
-		<Button Text="Создать" BackgroundColor="#00a86b" TextColor="White"/>
-		<Label Text="История" FontSize="Title" Padding="30,10,30,10"/>
-		<TableView Intent="Data">
-			<TableView.Root>
-				<TableRoot>
-					<TableSection>
-						<TextCell Text="Планшет 1 (дата?)"/>
-						<ImageCell Text="Тут кнопка открыть будет"/>
-					</TableSection>
-					<TableSection>
-						<TextCell Text="Планшет 2"/>
-						<ImageCell Text="Тут кнопка открыть будет"/>
-					</TableSection>
-					<TableSection>
-						<TextCell Text="Планшет 3"/>
-						<ImageCell Text="Тут кнопка открыть будет"/>
-					</TableSection>
-				</TableRoot>
-			</TableView.Root>
-		</TableView>
+		<Button x:Name="NewTabletButton"
+				Text="Новый планшет" 
+				BackgroundColor="#ff114f" 
+				TextColor="White"
+				Margin="30,20,30,10"
+				FontSize="15"
+				Clicked="NewTabletButton_Clicked"/>
+		<Label Text="История" 
+			   FontSize="Title" 
+			   Padding="30,10,30,10"
+			   TextColor="Black"/>
+		<Frame BackgroundColor="#e1d9d6"
+			   Margin="20,0,20,0"
+			   VerticalOptions="FillAndExpand"
+			   HasShadow="True" 
+			   BorderColor="Black">
+			<TableView Intent="Data">
+				<TableView.Root>
+					<TableRoot>
+						<TableSection>
+							<ViewCell>
+								<StackLayout Orientation="Horizontal"
+											 Padding="5,5,5,5"
+											 VerticalOptions="CenterAndExpand">
+									<Label Text="Первый планшет"
+										   FontSize="20"
+										   HorizontalOptions="StartAndExpand"
+										   TextColor="Black"/>
+									<Button Text="Открыть"
+										BackgroundColor="#00a86b" 
+										TextColor="White"
+										HorizontalOptions="EndAndExpand"/>
+								</StackLayout>
+							</ViewCell>
+						</TableSection>
+						<TableSection>
+							<ViewCell>
+								<StackLayout Orientation="Horizontal"
+											 Padding="5,5,5,5"
+											 VerticalOptions="CenterAndExpand">
+									<Label Text="Второй какой-то"
+										   FontSize="20"
+										   HorizontalOptions="StartAndExpand"
+										   TextColor="Black"/>
+									<Button Text="Открыть"
+											BackgroundColor="#00a86b" 
+											TextColor="White"
+											HorizontalOptions="EndAndExpand"/>
+								</StackLayout>
+							</ViewCell>
+						</TableSection>
+						<TableSection>
+							<ViewCell>
+								<StackLayout Orientation="Horizontal"
+											 Padding="5,5,5,5"
+											 VerticalOptions="CenterAndExpand">
+									<Label Text="Тест 3"
+										   FontSize="20"
+										   HorizontalOptions="StartAndExpand"
+										   TextColor="Black"/>
+									<Button Text="Открыть"
+											BackgroundColor="#00a86b" 
+											TextColor="White"
+											HorizontalOptions="EndAndExpand"/>
+								</StackLayout>
+							</ViewCell>
+						</TableSection>
+					</TableRoot>
+				</TableView.Root>
+			</TableView>
+		</Frame>
+		<Button x:Name="ExitButton"
+				Text="Выход" 
+				BackgroundColor="#00a86b" 
+				TextColor="White"
+				Margin="30,20,30,20"
+				FontSize="15"
+				Clicked="ExitButton_Clicked"/>
 	</StackLayout>
 </ContentPage>
