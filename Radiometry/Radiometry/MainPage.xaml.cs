@@ -18,11 +18,14 @@ namespace Radiometry
 
 			this.WelcomeItems = new List<WelcomeItem>
 			{
-				new WelcomeItem { ImageUrl = "first.jpg", Message = "Начните работу прямо сейчас." },
-				new WelcomeItem { ImageUrl = "first.jpg", Message = "Используйте возможности мобильных устройств." },
-				new WelcomeItem { ImageUrl = "first.jpg", Message = "Узнать больше о радиометрии." }
+				new WelcomeItem { ImageUrl = "logo.png", Message = "Начните работу прямо сейчас." },
+				new WelcomeItem { ImageUrl = "logo.png", Message = "Используйте возможности мобильных устройств." },
+				new WelcomeItem { ImageUrl = "logo.png", Message = "Узнать больше о радиометрии." }
 			};
 			this.BindingContext = this;
+
+			this.LoginButton.Clicked += Login_Clicked;
+			this.RegisterButton.Clicked += Register_Clicked;
 		}
 
 		private async void Login_Clicked(object sender, EventArgs e)
