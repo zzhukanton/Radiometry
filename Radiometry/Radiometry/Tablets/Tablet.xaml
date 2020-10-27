@@ -4,16 +4,51 @@
              x:Class="Radiometry.Tablet"
 			 BackgroundColor="#efdecd">
 
-    <StackLayout>
-		<Frame BackgroundColor="#efdecd" Padding="24" CornerRadius="0">
-			<Label Text="Планшет 1" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"/>
+	<StackLayout>
+		<Frame BackgroundColor="#efdecd" 
+			   Padding="24" 
+			   CornerRadius="0">
+			<Label Text="Первый планшет" 
+				   HorizontalTextAlignment="Center" 
+				   TextColor="Black" 
+				   FontSize="36"/>
 		</Frame>
-		<Label Text="Дата создания: 12.12.2020" FontSize="Title" Padding="30,10,30,10"/>
-		<Button Text="Изолинии (вид)" BackgroundColor="#00a86b" TextColor="White"/>
-		<Button Text="Аномалии (вид - цветной)" BackgroundColor="#00a86b" TextColor="White"/>
-		<Button Text="Профили (графики)" BackgroundColor="#00a86b" TextColor="White"/>
-		<Button Text="Пикеты (графики)" BackgroundColor="#00a86b" TextColor="White"/>
-		<Button Text="Назад" BackgroundColor="#00a86b" TextColor="White"/>
+		<Label Padding="30,0,30,0">
+			<Label.FormattedText>
+				<FormattedString>
+					<Span Text="Дата создания: " FontSize="Title" TextColor="Black"/>
+					<Span Text="27.10.2020" FontSize="Title" TextColor="Red"/>
+				</FormattedString>
+			</Label.FormattedText>
+		</Label>
+		<Label Text="Показать подробнее:" 
+			   FontSize="Title" 
+			   Padding="30,20,30,0"
+			   TextColor="Black"/>
+		<Button Text="Карта" 
+				BackgroundColor="#00a86b" 
+				TextColor="White"
+				Margin="30,10,30,10"
+				FontSize="15"/>
+		<Button Text="Аномалии" 
+				BackgroundColor="#00a86b" 
+				TextColor="White"
+				Margin="30,10,30,10"
+				FontSize="15"/>
+		<Button Text="График по профилю" 
+				BackgroundColor="#00a86b" 
+				TextColor="White"
+				Margin="30,10,30,10"
+				FontSize="15"/>
+		<Button Text="График по пикету" 
+				BackgroundColor="#00a86b" 
+				TextColor="White"
+				Margin="30,10,30,10"
+				FontSize="15"/>
+		<Button Text="Назад к списку" 
+				BackgroundColor="#00a86b" 
+				TextColor="White"
+				Margin="30,60,30,10"
+				FontSize="15"/>
 	</StackLayout>
-
 </ContentPage>
