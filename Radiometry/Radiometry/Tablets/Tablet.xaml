@@ -40,15 +40,10 @@
 				TextColor="White"
 				Margin="30,10,30,10"
 				FontSize="15"/>
-		<Button Text="График по пикету" 
-				BackgroundColor="#00a86b" 
-				TextColor="White"
-				Margin="30,10,30,10"
-				FontSize="15"/>
 		<Button Text="Назад к списку" 
 				BackgroundColor="#00a86b" 
 				TextColor="White"
-				Margin="30,60,30,10"
+				Margin="30,100,30,10"
 				FontSize="15"/>
 	</StackLayout>
 </ContentPage>

@@ -29,9 +29,6 @@
     <Compile Update="Tablets\New.xaml.cs">
       <DependentUpon>New.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Tablets\Pickets.xaml.cs">
-      <DependentUpon>Pickets.xaml</DependentUpon>
-    </Compile>
     <Compile Update="Tablets\Profiles.xaml.cs">
       <DependentUpon>Profiles.xaml</DependentUpon>
     </Compile>
