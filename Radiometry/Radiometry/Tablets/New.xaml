@@ -5,12 +5,24 @@
 			 BackgroundColor="#efdecd">
 
 	<StackLayout>
-		<Frame BackgroundColor="#efdecd" Padding="24" CornerRadius="0">
-			<Label Text="Новый планшет" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"/>
+		<Frame BackgroundColor="#efdecd" 
+			   Padding="24" 
+			   CornerRadius="0">
+			<Label Text="Новый планшет" 
+				   HorizontalTextAlignment="Center" 
+				   TextColor="Black" 
+				   FontSize="36"/>
 		</Frame>
-		<Label Text="Название" FontSize="Title" Padding="30,10,30,10"/>
-		<Entry x:Name="Title" Placeholder="Название"/>
-
+		<Label Text="Название" 
+			   FontSize="Title" 
+			   Padding="30,10,30,0" 
+			   TextColor="Black"/>
+		<Entry x:Name="Title" 
+			   Placeholder="Название" 
+			   Margin="30,10,30,10" 
+			   BackgroundColor="White" 
+			   ClearButtonVisibility="WhileEditing"/>
+		<!--add tabbed page for another creation options--> 
 		<Label Text="Число точек Х" FontSize="Title" Padding="30,10,30,10"/>
 		<Entry x:Name="countX" Placeholder="0"/>
 

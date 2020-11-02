@@ -7,54 +7,46 @@
 			 NavigationPage.HasNavigationBar="false">
 
 	<StackLayout>
-		<Frame 
-			BackgroundColor="#efdecd" 
-			Padding="24" 
-			CornerRadius="0">
-			<Label 
-				Text="Войти" 
-				HorizontalTextAlignment="Center" 
-				TextColor="Black" 
-				FontSize="36"/>
+		<Frame BackgroundColor="#efdecd" 
+			   Padding="24"
+			   CornerRadius="0">
+			<Label Text="Войти" 
+				   HorizontalTextAlignment="Center" 
+				   TextColor="Black" 
+				   FontSize="36"/>
 		</Frame>
-		<Label 
-			Text="Логин" 
-			FontSize="Title" 
-			Padding="30,10,30,0" 
-			TextColor="Black"/>
-		<Entry 
-			x:Name="LoginEntry" 
-			Placeholder="Логин" 
-			Margin="30,10,30,10" 
-			BackgroundColor="White" 
-			ClearButtonVisibility="WhileEditing"/>
-		<Label 
-			Text="Пароль" 
-			FontSize="Title" 
-			Padding="30,10,30,0" 
-			TextColor="Black"/>
-		<Entry 
-			x:Name="PasswordEntry" 
-			Placeholder="Пароль" 
-			IsPassword="true" 
-			Margin="30,10,30,10" 
-			BackgroundColor="White" 
-			ClearButtonVisibility="WhileEditing"/>
-		<Button 
-			x:Name="EnterButton"
-			Text="Войти" 
-			BackgroundColor="#00a86b" 
-			TextColor="White" 
-			Margin="30,120,30,10"
-			FontSize="15"
-			Clicked="Enter_Clicked"/>
-		<Button 
-			x:Name="BackButton"
-			Text="Назад" 
-			BackgroundColor="#00a86b" 
-			TextColor="White" 
-			Margin="30,10,30,10" 
-			Clicked="Back_Clicked"
-			FontSize="15"/>
+		<Label Text="Логин" 
+			   FontSize="Title" 
+			   Padding="30,10,30,0" 
+			   TextColor="Black"/>
+		<Entry x:Name="LoginEntry" 
+			   Placeholder="Логин" 
+			   Margin="30,10,30,10" 
+			   BackgroundColor="White" 
+			   ClearButtonVisibility="WhileEditing"/>
+		<Label Text="Пароль" 
+			   FontSize="Title" 
+			   Padding="30,10,30,0" 
+			   TextColor="Black"/>
+		<Entry x:Name="PasswordEntry" 
+			   Placeholder="Пароль" 
+			   IsPassword="true" 
+			   Margin="30,10,30,10" 
+			   BackgroundColor="White" 
+			   ClearButtonVisibility="WhileEditing"/>
+		<Button x:Name="EnterButton"
+				Text="Войти" 
+				BackgroundColor="#00a86b" 
+				TextColor="White" 
+				Margin="30,120,30,10"
+				FontSize="15"
+				Clicked="Enter_Clicked"/>
+		<Button x:Name="BackButton"
+				Text="Назад" 
+				BackgroundColor="#00a86b" 
+				TextColor="White" 
+				Margin="30,10,30,10" 
+				Clicked="Back_Clicked"
+				FontSize="15"/>
 	</StackLayout>
 </ContentPage>
