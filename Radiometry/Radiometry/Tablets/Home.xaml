@@ -59,9 +59,11 @@
 										   HorizontalOptions="StartAndExpand"
 										   TextColor="Black"/>
 									<Button Text="Открыть"
+											x:Name="OpenTabletButton"
 											BackgroundColor="#00a86b" 
 											TextColor="White"
-											HorizontalOptions="EndAndExpand"/>
+											HorizontalOptions="EndAndExpand"
+											Clicked="OpenTabletButton_Clicked"/>
 								</StackLayout>
 							</ViewCell>
 						</TableSection>

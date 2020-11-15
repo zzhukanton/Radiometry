@@ -13,6 +13,13 @@ namespace Radiometry
 		public Tablet()
 		{
 			InitializeComponent();
+
+			this.IsolinesButton.Clicked += Isolines_Clicked;
+		}
+
+		private async void Isolines_Clicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new Isolines());
 		}
 	}
 }
