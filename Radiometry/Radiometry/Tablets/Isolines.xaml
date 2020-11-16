@@ -5,28 +5,37 @@
 			 BackgroundColor="#efdecd"
 			 NavigationPage.HasNavigationBar="false">
 
-    <StackLayout>
+	<StackLayout>
 		<Frame BackgroundColor="#efdecd"
 			   Padding="24" 
 			   CornerRadius="0">
-			<Label Text="Изолинии" 
+			<Label Text="Карта" 
 				   HorizontalTextAlignment="Center" 
 				   TextColor="Black" 
 				   FontSize="36"/>
 		</Frame>
-		<Label Text="Дата создания: 12.12.2020" 
-			   FontSize="Title" 
-			   Padding="30,10,30,10"
-			   TextColor="Black" />
-		<Label Text="Координаты начала: 41.40338, 2.17403" 
-			   FontSize="Subtitle" 
-			   Padding="30,10,30,10"
-			   TextColor="Black" />
-		<Image Source="nir.jpg"
-			   Aspect="AspectFill"
-				HeightRequest="400"
-				WidthRequest="300"
-				HorizontalOptions="Center"/> <!--изображение изолиний-->
+		<ScrollView>
+			<StackLayout>
+				<Label Text="Дата создания: 12.12.2020" 
+					   FontSize="Title" 
+					   Padding="30,10,30,10"
+					   TextColor="Black" />
+				<Label Text="Координаты начала: 41.40338, 2.17403" 
+					   FontSize="Subtitle" 
+					   Padding="30,10,30,10"
+					   TextColor="Black" />
+				<Image Source="nir.jpg"
+					   Aspect="AspectFill"
+					   HeightRequest="400"
+					   WidthRequest="300"
+					   HorizontalOptions="Center"/>
+				<Button Text="Назад" 
+						x:Name="BackButton"
+						BackgroundColor="#00a86b" 
+						TextColor="White"
+						Margin="30,10,30,10"
+						Clicked="BackButton_Clicked"/>
+			</StackLayout>
+		</ScrollView>
 	</StackLayout>
-
 </ContentPage>

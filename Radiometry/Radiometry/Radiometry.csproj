@@ -26,6 +26,15 @@
     <Compile Update="Tablets\Measurement.xaml.cs">
       <DependentUpon>Measurement.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Tablets\NewDeltaDistance.xaml.cs">
+      <DependentUpon>NewDeltaDistance.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Tablets\NewPointsDistance.xaml.cs">
+      <DependentUpon>NewPointsDistance.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Tablets\NewPointsDelta.xaml.cs">
+      <DependentUpon>NewPointsDelta.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Tablets\New.xaml.cs">
       <DependentUpon>New.xaml</DependentUpon>
     </Compile>

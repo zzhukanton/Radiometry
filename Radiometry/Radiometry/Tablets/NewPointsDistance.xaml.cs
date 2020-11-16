@@ -8,9 +8,9 @@ using Xamarin.Forms;
 
 namespace Radiometry
 {
-	public partial class New : TabbedPage
+	public partial class NewPointsDistance : ContentPage
 	{
-		public New()
+		public NewPointsDistance()
 		{
 			InitializeComponent();
 		}

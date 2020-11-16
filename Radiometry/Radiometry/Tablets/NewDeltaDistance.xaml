@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Radiometry.NewDeltaDistance"
+			 BackgroundColor="#efdecd"
+			 NavigationPage.HasNavigationBar="false"
+			 Title="NewDeltaDistance">
+
+	<StackLayout>
+		<Frame BackgroundColor="#efdecd" 
+			   Padding="24" 
+			   CornerRadius="0">
+			<Label Text="Шаг, расстояние" 
+				   HorizontalTextAlignment="Center" 
+				   TextColor="Black" 
+				   FontSize="36"/>
+		</Frame>
+		<Label Text="Название" 
+			   FontSize="Title" 
+			   Padding="30,10,30,0" 
+			   TextColor="Black"/>
+		<Entry x:Name="Title" 
+			   Placeholder="Название" 
+			   Margin="30,10,30,10" 
+			   BackgroundColor="White" 
+			   ClearButtonVisibility="WhileEditing"/>
+		<!--add tabbed page for another creation options-->	
+		<Label Text="Шаг по Х" FontSize="Title" Padding="30,10,30,10"/>
+		<Entry x:Name="countX" Placeholder="0"/>
+
+		<Label Text="Шаг по Y" FontSize="Title" Padding="30,10,30,10"/>
+		<Entry x:Name="countY" Placeholder="0"/>
+
+		<Label Text="Расстояние по Х" FontSize="Title" Padding="30,10,30,10"/>
+		<Entry x:Name="deltaX" Placeholder="0"/>
+
+		<Label Text="Расстояние по Y" FontSize="Title" Padding="30,10,30,10"/>
+		<Entry x:Name="deltaY" Placeholder="0"/>
+
+		<Label Text="Перед началом измерений займите требуемое начальное положение и нажмите Начать" FontSize="Title" Padding="30,10,30,10"/>
+
+		<Button Text="Начать" BackgroundColor="#00a86b" TextColor="White"/>
+		<Button Text="Назад" BackgroundColor="#00a86b" TextColor="White"/>
+	</StackLayout>
+</ContentPage>

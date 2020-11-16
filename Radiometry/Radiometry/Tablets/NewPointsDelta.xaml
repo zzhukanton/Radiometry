@@ -1,32 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
-            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-			xmlns:local="clr-namespace:Radiometry"
-			x:Class="Radiometry.New"
-			BarBackgroundColor="#efdecd"
-			NavigationPage.HasNavigationBar="false">
-	<TabbedPage.Children>
-		<NavigationPage Title="Шаг, расстояние" IconImageSource="" BackgroundColor="#efdecd">
-			<x:Arguments>
-				<local:NewDeltaDistance />
-			</x:Arguments>
-		</NavigationPage>
-		<NavigationPage Title="Точки, шаг" IconImageSource="" BackgroundColor="#efdecd">
-			<x:Arguments>
-				<local:NewPointsDelta />
-			</x:Arguments>
-		</NavigationPage>
-		<NavigationPage Title="Точки, расстояние" IconImageSource="" BackgroundColor="#efdecd">
-			<x:Arguments>
-				<local:NewPointsDistance />
-			</x:Arguments>
-		</NavigationPage>
-	</TabbedPage.Children>
-	<!--<StackLayout>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Radiometry.NewPointsDelta"
+			 BackgroundColor="#efdecd"
+			 NavigationPage.HasNavigationBar="false"
+			 Title="NewPointsDelta">
+
+	<StackLayout>
 		<Frame BackgroundColor="#efdecd" 
 			   Padding="24" 
 			   CornerRadius="0">
-			<Label Text="Новый планшет" 
+			<Label Text="Точки, шаг" 
 				   HorizontalTextAlignment="Center" 
 				   TextColor="Black" 
 				   FontSize="36"/>
@@ -40,7 +24,7 @@
 			   Margin="30,10,30,10" 
 			   BackgroundColor="White" 
 			   ClearButtonVisibility="WhileEditing"/>
-		--><!--add tabbed page for another creation options--><!--	
+		<!--add tabbed page for another creation options-->	
 		<Label Text="Число точек Х" FontSize="Title" Padding="30,10,30,10"/>
 		<Entry x:Name="countX" Placeholder="0"/>
 
@@ -57,5 +41,5 @@
 
 		<Button Text="Начать" BackgroundColor="#00a86b" TextColor="White"/>
 		<Button Text="Назад" BackgroundColor="#00a86b" TextColor="White"/>
-	</StackLayout>-->
-</TabbedPage>
+	</StackLayout>
+</ContentPage>

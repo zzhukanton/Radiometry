@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Radiometry
@@ -15,11 +10,23 @@ namespace Radiometry
 			InitializeComponent();
 
 			this.IsolinesButton.Clicked += Isolines_Clicked;
+			this.ProfilesButton.Clicked += ProfilesButton_Clicked;
+			this.AnomalyButton.Clicked += AnomalyButton_Clicked;
 		}
 
 		private async void Isolines_Clicked(object sender, EventArgs e)
 		{
 			await Navigation.PushAsync(new Isolines());
+		}
+
+		private async void ProfilesButton_Clicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new Profiles());
+		}
+
+		private async void AnomalyButton_Clicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new Anomaly());
 		}
 	}
 }

@@ -142,4 +142,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\nir.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\profile.png" />
+  </ItemGroup>
 </Project>
