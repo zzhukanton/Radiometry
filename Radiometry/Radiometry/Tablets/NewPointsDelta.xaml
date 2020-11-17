@@ -24,8 +24,9 @@
 			   Margin="30,10,30,10" 
 			   BackgroundColor="White" 
 			   ClearButtonVisibility="WhileEditing"/>
-		<!--add tabbed page for another creation options-->	
-		<Label Text="Число точек Х" FontSize="Title" Padding="30,10,30,10"/>
+		<Label Text="Число точек Х" 
+			   FontSize="Title" 
+			   Padding="30,10,30,10"/>
 		<Entry x:Name="countX" Placeholder="0"/>
 
 		<Label Text="Число точек Y" FontSize="Title" Padding="30,10,30,10"/>

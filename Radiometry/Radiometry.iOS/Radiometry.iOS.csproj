@@ -145,4 +145,13 @@
   <ItemGroup>
     <BundleResource Include="Resources\profile.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shovel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\diamond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\hammer.png" />
+  </ItemGroup>
 </Project>

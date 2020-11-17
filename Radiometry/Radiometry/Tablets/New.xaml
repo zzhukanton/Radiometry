@@ -4,19 +4,29 @@
 			xmlns:local="clr-namespace:Radiometry"
 			x:Class="Radiometry.New"
 			BarBackgroundColor="#efdecd"
+			BarTextColor="Black"
 			NavigationPage.HasNavigationBar="false">
 	<TabbedPage.Children>
-		<NavigationPage Title="Шаг, расстояние" IconImageSource="" BackgroundColor="#efdecd">
+		<NavigationPage Title="Шаг, расстояние"
+						IconImageSource="diamond.png"
+						BackgroundColor="#efdecd"
+						BarTextColor="Black">
 			<x:Arguments>
 				<local:NewDeltaDistance />
 			</x:Arguments>
 		</NavigationPage>
-		<NavigationPage Title="Точки, шаг" IconImageSource="" BackgroundColor="#efdecd">
+		<NavigationPage Title="Точки, шаг"
+						IconImageSource="hammer.png"
+						BackgroundColor="#efdecd"
+						BarTextColor="Black">
 			<x:Arguments>
 				<local:NewPointsDelta />
 			</x:Arguments>
 		</NavigationPage>
-		<NavigationPage Title="Точки, расстояние" IconImageSource="" BackgroundColor="#efdecd">
+		<NavigationPage Title="Точки, расстояние"
+						IconImageSource="shovel.png"
+						BackgroundColor="#efdecd"
+						BarTextColor="Black">
 			<x:Arguments>
 				<local:NewPointsDistance />
 			</x:Arguments>
