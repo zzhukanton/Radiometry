@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Radiometry
@@ -13,6 +8,16 @@ namespace Radiometry
 		public NewPointsDistance()
 		{
 			InitializeComponent();
+		}
+
+		private async void BackButton_Clicked(object sender, EventArgs e)
+		{
+			await Navigation.PopAsync();
+		}
+
+		private async void StartButton_Clicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new Measurement());
 		}
 	}
 }

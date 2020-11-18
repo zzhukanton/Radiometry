@@ -20,27 +20,123 @@
 			   TextColor="Black"/>
 		<Entry x:Name="Title" 
 			   Placeholder="Название" 
-			   Margin="30,10,30,10" 
+			   Margin="30,10,30,0" 
 			   BackgroundColor="White" 
 			   ClearButtonVisibility="WhileEditing"/>
-		<StackLayout Orientation="Horizontal">
-			<Label Text="Число точек Х" FontSize="Title"/>
-			<Entry x:Name="countX" Placeholder="0"/>
+		<StackLayout Orientation="Horizontal"
+					 Margin="30,10,30,10">
+			<Label Text="Кол-во точек" 
+				   FontSize="Title"
+				   VerticalOptions="Center"
+				   TextColor="Black"/>
+			<Frame Padding="1"
+				   VerticalOptions="Center"
+				   BorderColor="Black">
+				<StackLayout Orientation="Horizontal"
+							Padding="3">
+					<Label Text="X:" 
+						   FontSize="Title"
+						   VerticalOptions="Center"
+						   TextColor="Black"/>
+					<Entry x:Name="pointsX" 
+						   WidthRequest="50"
+						   Placeholder="0" 
+						   VerticalOptions="Center"
+						   BackgroundColor="White"/>
+				</StackLayout>
+			</Frame>
+			<Frame Padding="1"
+				   VerticalOptions="Center"
+				   BorderColor="Black">
+				<StackLayout Orientation="Horizontal"
+							Padding="3">
+					<Label Text="Y:" 
+						   VerticalOptions="Center"
+						   FontSize="Title"
+						   TextColor="Black"/>
+					<Entry x:Name="pointsY" 
+						   WidthRequest="50"
+						   VerticalOptions="Center"
+						   Placeholder="0" 
+						   BackgroundColor="White"/>
+				</StackLayout>
+			</Frame>
 		</StackLayout>
-		
 
-		<Label Text="Число точек Y" FontSize="Title" Margin="30,10,30,10"/>
-		<Entry x:Name="countY" Placeholder="0"/>
+		<StackLayout Orientation="Horizontal"
+					 Margin="30,0,30,10">
+			<Label Text="Расстояние, м" 
+				   FontSize="Title"
+				   VerticalOptions="Center"
+				   TextColor="Black"/>
+			<Frame Padding="1"
+				   VerticalOptions="Center"
+				   BorderColor="Black">
+				<StackLayout Orientation="Horizontal"
+							Padding="3">
+					<Label Text="X:" 
+						   FontSize="Title"
+						   VerticalOptions="Center"
+						   TextColor="Black"/>
+					<Entry x:Name="distanceX" 
+						   WidthRequest="50"
+						   Placeholder="0" 
+						   VerticalOptions="Center"
+						   BackgroundColor="White"/>
+				</StackLayout>
+			</Frame>
+			<Frame Padding="1"
+				   VerticalOptions="Center"
+				   BorderColor="Black">
+				<StackLayout Orientation="Horizontal"
+							Padding="3">
+					<Label Text="Y:" 
+						   VerticalOptions="Center"
+						   FontSize="Title"
+						   TextColor="Black"/>
+					<Entry x:Name="distanceY" 
+						   WidthRequest="50"
+						   VerticalOptions="Center"
+						   Placeholder="0" 
+						   BackgroundColor="White"/>
+				</StackLayout>
+			</Frame>
+		</StackLayout>
 
-		<Label Text="Расстояние по Х" FontSize="Title" Padding="30,10,30,10"/>
-		<Entry x:Name="deltaX" Placeholder="0"/>
+		<Label Text="Перед началом измерений займите требуемое начальное положение и нажмите Начать" 
+			   FontSize="Subtitle" 
+			   Margin="30,0,30,10"
+			   TextColor="Black"/>
+		<StackLayout Orientation="Horizontal"
+					 Margin="30,0,30,0">
+			<Label FontSize="Subtitle">
+				<Label.FormattedText>
+					<FormattedString>
+						<Span Text="Текущие координаты: " TextColor="Black"/>
+						<Span Text="41.40338, 2.17403" TextColor="Red"/>
+					</FormattedString>
+				</Label.FormattedText>
+			</Label>
+			<Image BackgroundColor="White"
+				   Source="refresh.png"
+				   WidthRequest="20"
+				   HeightRequest="20"
+				   HorizontalOptions="EndAndExpand"/>
+		</StackLayout>
 
-		<Label Text="Расстояние по Y" FontSize="Title" Padding="30,10,30,10"/>
-		<Entry x:Name="deltaY" Placeholder="0"/>
-
-		<Label Text="Перед началом измерений займите требуемое начальное положение и нажмите Начать" FontSize="Title" Padding="30,10,30,10"/>
-
-		<Button Text="Начать" BackgroundColor="#00a86b" TextColor="White"/>
-		<Button Text="Назад" BackgroundColor="#00a86b" TextColor="White"/>
+		<Button Text="Начать" 
+				x:Name="StartButton"
+				BackgroundColor="#ff114f" 
+				TextColor="White"
+				Margin="30,10,30,10"
+				Clicked="StartButton_Clicked"
+				FontSize="15"/>
+		<Button Text="Назад" 
+				x:Name="BackButton"
+				BackgroundColor="#00a86b" 
+				TextColor="White"
+				Margin="30,0,30,10"
+				Clicked="BackButton_Clicked"
+				FontSize="15"/>
 	</StackLayout>
 </ContentPage>

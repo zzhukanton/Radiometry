@@ -32,40 +32,4 @@
 			</x:Arguments>
 		</NavigationPage>
 	</TabbedPage.Children>
-	<!--<StackLayout>
-		<Frame BackgroundColor="#efdecd" 
-			   Padding="24" 
-			   CornerRadius="0">
-			<Label Text="Новый планшет" 
-				   HorizontalTextAlignment="Center" 
-				   TextColor="Black" 
-				   FontSize="36"/>
-		</Frame>
-		<Label Text="Название" 
-			   FontSize="Title" 
-			   Padding="30,10,30,0" 
-			   TextColor="Black"/>
-		<Entry x:Name="Title" 
-			   Placeholder="Название" 
-			   Margin="30,10,30,10" 
-			   BackgroundColor="White" 
-			   ClearButtonVisibility="WhileEditing"/>
-		--><!--add tabbed page for another creation options--><!--	
-		<Label Text="Число точек Х" FontSize="Title" Padding="30,10,30,10"/>
-		<Entry x:Name="countX" Placeholder="0"/>
-
-		<Label Text="Число точек Y" FontSize="Title" Padding="30,10,30,10"/>
-		<Entry x:Name="countY" Placeholder="0"/>
-
-		<Label Text="Шаг по Х" FontSize="Title" Padding="30,10,30,10"/>
-		<Entry x:Name="deltaX" Placeholder="0"/>
-
-		<Label Text="Шаг по Y" FontSize="Title" Padding="30,10,30,10"/>
-		<Entry x:Name="deltaY" Placeholder="0"/>
-
-		<Label Text="Перед началом измерений займите требуемое начальное положение и нажмите Начать" FontSize="Title" Padding="30,10,30,10"/>
-
-		<Button Text="Начать" BackgroundColor="#00a86b" TextColor="White"/>
-		<Button Text="Назад" BackgroundColor="#00a86b" TextColor="White"/>
-	</StackLayout>-->
 </TabbedPage>
