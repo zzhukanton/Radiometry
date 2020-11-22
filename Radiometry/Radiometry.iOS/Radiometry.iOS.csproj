@@ -157,4 +157,19 @@
   <ItemGroup>
     <BundleResource Include="Resources\refresh.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\grid_start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\red_dot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\yellow_dot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\green_dot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\grid_inprogress.png" />
+  </ItemGroup>
 </Project>

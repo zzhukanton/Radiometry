@@ -58,7 +58,7 @@
 										   FontSize="20"
 										   HorizontalOptions="StartAndExpand"
 										   TextColor="Black"/>
-									<Button Text="Открыть"
+									<Button Text="Продолжить"
 											x:Name="OpenTabletButton"
 											BackgroundColor="#00a86b" 
 											TextColor="White"

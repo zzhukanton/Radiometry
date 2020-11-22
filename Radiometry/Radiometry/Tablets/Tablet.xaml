@@ -14,11 +14,30 @@
 				   TextColor="Black" 
 				   FontSize="36"/>
 		</Frame>
-		<Label Padding="30,0,30,0">
+		<Label Padding="30,0,30,0"
+			   FontSize="Title">
 			<Label.FormattedText>
 				<FormattedString>
-					<Span Text="Дата создания: " FontSize="Title" TextColor="Black"/>
-					<Span Text="27.10.2020" FontSize="Title" TextColor="Red"/>
+					<Span Text="Дата создания: " TextColor="Black"/>
+					<Span Text="12.12.2020" TextColor="Red"/>
+				</FormattedString>
+			</Label.FormattedText>
+		</Label>
+		<Label Padding="30,0,30,0" 
+			   FontSize="Subtitle">
+			<Label.FormattedText>
+				<FormattedString>
+					<Span Text="Среднее излучение: " TextColor="Black"/>
+					<Span Text="41 мкР/ч" TextColor="Red"/>
+				</FormattedString>
+			</Label.FormattedText>
+		</Label>
+		<Label Padding="30,0,30,0"
+			   FontSize="Subtitle">
+			<Label.FormattedText>
+				<FormattedString>
+					<Span Text="Максимальное излучение: " TextColor="Black"/>
+					<Span Text="1500 мкР/ч" TextColor="Red"/>
 				</FormattedString>
 			</Label.FormattedText>
 		</Label>
@@ -50,7 +69,7 @@
 		<Button Text="Назад к списку" 
 				BackgroundColor="#00a86b" 
 				TextColor="White"
-				Margin="30,100,30,10"
+				Margin="30,60,30,10"
 				FontSize="15"/>
 	</StackLayout>
 </ContentPage>
