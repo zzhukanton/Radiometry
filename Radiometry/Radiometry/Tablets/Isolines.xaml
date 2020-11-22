@@ -20,10 +20,14 @@
 					   FontSize="Title" 
 					   Padding="30,10,30,10"
 					   TextColor="Black" />
-				<Label Text="Координаты начала: 41.40338, 2.17403" 
-					   FontSize="Subtitle" 
-					   Padding="30,10,30,10"
-					   TextColor="Black" />
+				<Label FontSize="Subtitle">
+					<Label.FormattedText>
+						<FormattedString>
+							<Span Text="Текущие координаты: " TextColor="Black"/>
+							<Span Text="41.40338, 2.17403" TextColor="Red"/>
+						</FormattedString>
+					</Label.FormattedText>
+				</Label>
 				<Image Source="nir.jpg"
 					   Aspect="AspectFill"
 					   HeightRequest="400"
