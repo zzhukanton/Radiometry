@@ -23,7 +23,11 @@
 				</FormattedString>
 			</Label.FormattedText>
 		</Label>
-		<Image Source="" /> <!--изображение сетки с прогрессом-->
+		<Image Source="grid_start.png"
+					   Aspect="AspectFill"
+					   HeightRequest="400"
+					   WidthRequest="300"
+					   HorizontalOptions="Center"/>
 
 		<Label Text="Значение" FontSize="Title" Padding="30,10,30,10"/>
 		<Entry x:Name="value" Placeholder="0"/>
