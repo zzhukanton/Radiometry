@@ -67,9 +67,11 @@
 				FontSize="15"
 				Clicked="ProfilesButton_Clicked"/>
 		<Button Text="Назад к списку" 
+				x:Name="BackButton"
 				BackgroundColor="#00a86b" 
 				TextColor="White"
 				Margin="30,60,30,10"
-				FontSize="15"/>
+				FontSize="15"
+				Clicked="BackButton_Clicked"/>
 	</StackLayout>
 </ContentPage>

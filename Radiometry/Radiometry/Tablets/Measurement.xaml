@@ -11,29 +11,77 @@
 			<Label Text="Первый планшет" 
 				   HorizontalTextAlignment="Center" 
 				   TextColor="Black" 
-				   FontSize="36"/>
+				   FontSize="36"
+				   HorizontalOptions="Center"/>
 		</Frame>
-		<Label FontSize="SubTitle" 
-			   Padding="30,10,30,10">
-			<Label.FormattedText>
-				<FormattedString>
-					<Span Text="Пройдено точек: " TextColor="Black"/>
-					<Span Text="4 " TextColor="Red"/>
-					<Span Text="из 240" TextColor="Black"/>
-				</FormattedString>
-			</Label.FormattedText>
-		</Label>
-		<Image Source="grid_start.png"
-					   Aspect="AspectFill"
-					   HeightRequest="400"
+		<ScrollView>
+			<StackLayout>
+				<Label FontSize="SubTitle" 
+					   Padding="30,10,30,10"
+					   HorizontalOptions="Center">
+					<Label.FormattedText>
+						<FormattedString>
+							<Span Text="Пройдено точек: " TextColor="Black"/>
+							<Span Text="4 " TextColor="Red"/>
+							<Span Text="из 240" TextColor="Black"/>
+						</FormattedString>
+					</Label.FormattedText>
+				</Label>
+				<!--<Image Source="grid_inprogress.png"
+					   Aspect="AspectFit"
+					   HeightRequest="460"
 					   WidthRequest="300"
-					   HorizontalOptions="Center"/>
+					   HorizontalOptions="Center"/>-->
+				<StackLayout Orientation="Horizontal"
+							 Margin="30,10,30,10">
+					<StackLayout Orientation="Vertical">
+						<StackLayout Orientation="Horizontal">
+							<Image Source="yellow_dot.png"
+							   HeightRequest="20"
+							   WidthRequest="20"
+							   Aspect="AspectFill"
+							   HorizontalOptions="Start"/>
+							<Label Text="- ваше местоположение"
+							   FontSize="Subtitle"
+							   TextColor="Black"/>
+						</StackLayout>
+						<StackLayout Orientation="Horizontal">
+							<Image Source="red_dot.png"
+							   HeightRequest="20"
+							   WidthRequest="20"
+							   Aspect="AspectFill"
+							   HorizontalOptions="Start"/>
+							<Label Text="- точка не пройдена"
+							   FontSize="Subtitle"
+							   TextColor="Black"/>
+						</StackLayout>
+						<StackLayout Orientation="Horizontal">
+							<Image Source="green_dot.png"
+							   HeightRequest="20"
+							   WidthRequest="20"
+							   Aspect="AspectFill"
+							   HorizontalOptions="Start"/>
+							<Label Text="- пройденная точка"
+							   FontSize="Subtitle"
+							   TextColor="Black"/>
+						</StackLayout>
+					</StackLayout>
+					<Image Source="refresh.png"
+							   HeightRequest="40"
+							   WidthRequest="40"
+							   Aspect="AspectFill"
+							   HorizontalOptions="EndAndExpand"/>
+				</StackLayout>
+				
+				
+				<Label Text="Значение" FontSize="Title" Padding="30,10,30,10"/>
+				<Entry x:Name="value" Placeholder="0"/>
 
-		<Label Text="Значение" FontSize="Title" Padding="30,10,30,10"/>
-		<Entry x:Name="value" Placeholder="0"/>
-
-		<Button Text="Добавить" BackgroundColor="#00a86b" TextColor="White"/>
-		<Button Text="Завершить" BackgroundColor="#00a86b" TextColor="White"/> <!--появляется по завершению-->
-		<Button Text="Назад" BackgroundColor="#00a86b" TextColor="White"/>
+				<Button Text="Добавить" BackgroundColor="#00a86b" TextColor="White"/>
+				<Button Text="Завершить" BackgroundColor="#00a86b" TextColor="White"/>
+				<!--появляется по завершению-->
+				<Button Text="Назад" BackgroundColor="#00a86b" TextColor="White"/>
+			</StackLayout>
+		</ScrollView>
 	</StackLayout>
 </ContentPage>

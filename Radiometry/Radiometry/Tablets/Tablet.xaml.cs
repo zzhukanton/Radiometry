@@ -28,5 +28,10 @@ namespace Radiometry
 		{
 			await Navigation.PushAsync(new Anomaly());
 		}
+
+		private async void BackButton_Clicked(object sender, EventArgs e)
+		{
+			await Navigation.PopAsync();
+		}
 	}
 }
