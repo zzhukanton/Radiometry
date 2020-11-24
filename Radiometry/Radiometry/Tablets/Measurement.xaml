@@ -67,20 +67,45 @@
 						</StackLayout>
 					</StackLayout>
 					<Image Source="refresh.png"
-							   HeightRequest="40"
-							   WidthRequest="40"
-							   Aspect="AspectFill"
-							   HorizontalOptions="EndAndExpand"/>
+						   HeightRequest="40"
+						   WidthRequest="40"
+						   VerticalOptions="CenterAndExpand"
+						   HorizontalOptions="EndAndExpand"/>
 				</StackLayout>
-				
-				
-				<Label Text="Значение" FontSize="Title" Padding="30,10,30,10"/>
-				<Entry x:Name="value" Placeholder="0"/>
-
-				<Button Text="Добавить" BackgroundColor="#00a86b" TextColor="White"/>
-				<Button Text="Завершить" BackgroundColor="#00a86b" TextColor="White"/>
-				<!--появляется по завершению-->
-				<Button Text="Назад" BackgroundColor="#00a86b" TextColor="White"/>
+				<Label FontSize="Subtitle"
+					   Margin="30,10,30,10">
+					<Label.FormattedText>
+						<FormattedString>
+							<Span Text="Текущие координаты: " TextColor="Black"/>
+							<Span Text="41.40338, 2.17403" TextColor="Red"/>
+						</FormattedString>
+					</Label.FormattedText>
+				</Label>
+				<Label FontSize="Subtitle"
+					   Margin="30,10,30,10"
+					   HorizontalOptions="Center">
+					<Label.FormattedText>
+						<FormattedString>
+							<Span Text="Находясь в нужной точке, нажмите кнопку Измерить, чтобы ввести новые показания либо отредактировать существующие"
+								  TextColor="Black"/>
+						</FormattedString>
+					</Label.FormattedText>
+				</Label>
+				<StackLayout Orientation="Horizontal"
+							 Margin="30,10,30,10">
+					<Button Text="Измерить"
+							BackgroundColor="#00a86b" 
+							TextColor="White"
+							FontSize="15"
+							Margin="0,0,10,0"
+							WidthRequest="145"/>
+					<Button Text="Завершить"
+							BackgroundColor="#00a86b"
+							TextColor="White"
+							FontSize="15"
+							Margin="10,0,10,0"
+							WidthRequest="145"/>
+				</StackLayout>
 			</StackLayout>
 		</ScrollView>
 	</StackLayout>
