@@ -110,18 +110,23 @@
 				</StackLayout>
 				<!--<StackLayout Orientation="Horizontal"
 							 Margin="30,10,30,10">
-					<Entry Text="Измерить"
+					<Entry Text="20"
 							BackgroundColor="White" 
 							Placeholder="0"
 							FontSize="15"
 							Margin="0,0,10,0"
-							WidthRequest="145"/>
-					<Button Text="Добавить"
+							WidthRequest="125"/>
+					<Label Text="мкР/ч"
+						   FontSize="Subtitle"
+						   Margin="0,0,0,0"
+						   TextColor="Black"
+						   VerticalOptions="Center"/>
+					<Button Text="Сохранить"
 							BackgroundColor="#00a86b"
 							TextColor="White"
 							FontSize="15"
 							Margin="10,0,10,0"
-							WidthRequest="145"/>
+							WidthRequest="125"/>
 				</StackLayout>-->
 				<!--<StackLayout Orientation="Horizontal"
 							 Margin="30,10,30,10">

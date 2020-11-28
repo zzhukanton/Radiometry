@@ -17,53 +17,60 @@
 			<StackLayout>
 				<Label Text="Выбрать профиль (Х):" 
 					   FontSize="Title" 
-					   Padding="30,10,30,10"/>
-				<Picker x:Name="pickerX"
-						Margin="30,10,30,10"
-						BackgroundColor="White">
-					<Picker.Items>
-						<x:String>1</x:String>
-						<x:String>2</x:String>
-						<x:String>3</x:String>
-						<x:String>4</x:String>
-						<x:String>5</x:String>
-						<x:String>6</x:String>
-						<x:String>7</x:String>
-						<x:String>8</x:String>
-						<x:String>9</x:String>
-						<x:String>10</x:String>
-						<x:String>11</x:String>
-						<x:String>12</x:String>
-					</Picker.Items>
-				</Picker>
-				<Button Text="Показать" 
-						BackgroundColor="#00a86b" 
-						TextColor="White"
-						Margin="30,10,30,10"
-						FontSize="15"/>
-				<ScrollView Orientation="Horizontal">
+					   TextColor="Black"
+					   Padding="30,10,30,0"/>
+				<StackLayout Orientation="Horizontal"
+							 Margin="30,10,30,10">
+					<Picker x:Name="pickerX"
+							Margin="0,0,10,10"
+							WidthRequest="145"
+							BackgroundColor="White">
+						<Picker.Items>
+							<x:String>1</x:String>
+							<x:String>2</x:String>
+							<x:String>3</x:String>
+							<x:String>4</x:String>
+							<x:String>5</x:String>
+							<x:String>6</x:String>
+							<x:String>7</x:String>
+							<x:String>8</x:String>
+							<x:String>9</x:String>
+							<x:String>10</x:String>
+							<x:String>11</x:String>
+							<x:String>12</x:String>
+						</Picker.Items>
+					</Picker>
+					<Button Text="Показать" 
+							BackgroundColor="#00a86b" 
+							TextColor="White"
+							Margin="10,0,10,10"
+							WidthRequest="145"
+							FontSize="15"/>
+				</StackLayout>
+				<ScrollView Orientation="Horizontal"
+							Margin="30,0,30,0">
 					<Image Source="profile.png"
 						   WidthRequest="800"
 						   HeightRequest="250"
 						   Aspect="AspectFill"
 						   HorizontalOptions="Center"/>
 				</ScrollView>
-				<Label Text="Среднее: 19.5" 
+				<Label Text="Среднее: 19.5 мкР/ч" 
 					   FontSize="Subtitle" 
-					   Padding="30,10,30,5"
+					   Padding="30,0,30,0"
 					   TextColor="Black"/>
-				<Label Text="Максимальное: 115" 
+				<Label Text="Максимальное: 115 мкР/ч" 
 					   FontSize="Subtitle" 
-					   Padding="30,5,30,5"
+					   Padding="30,0,30,0"
 					   TextColor="Black"/>
-				<Label Text="Минимальное: 10" 
+				<Label Text="Минимальное: 10 мкР/ч" 
 					   FontSize="Subtitle" 
-					   Padding="30,5,30,5"
+					   Padding="30,0,30,10"
 					   TextColor="Black"/>
 				<Button Text="Назад" 
 						BackgroundColor="#00a86b" 
 						TextColor="White"
-						Margin="30,10,30,10"
+						Margin="30,0,30,0"
 						FontSize="15"/>
 			</StackLayout>
 		</ScrollView>

@@ -14,7 +14,7 @@ namespace Radiometry
 
 		private async void NewTabletButton_Clicked(object sender, EventArgs e)
 		{
-			await Navigation.PushAsync(new New());
+			await Navigation.PushAsync(new Measurement());
 		}
 
 		private async void ExitButton_Clicked(object sender, EventArgs e)

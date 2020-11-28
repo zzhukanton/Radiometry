@@ -20,7 +20,8 @@
 					   FontSize="Title" 
 					   Padding="30,10,30,10"
 					   TextColor="Black" />
-				<Label FontSize="Subtitle">
+				<Label FontSize="Subtitle"
+					   Padding="30,10,30,10">
 					<Label.FormattedText>
 						<FormattedString>
 							<Span Text="Текущие координаты: " TextColor="Black"/>
@@ -30,7 +31,7 @@
 				</Label>
 				<Image Source="map_updated.jpg"
 					   Aspect="AspectFill"
-					   HeightRequest="400"
+					   HeightRequest="450"
 					   WidthRequest="300"
 					   HorizontalOptions="Center"/>
 				<Button Text="Назад" 
