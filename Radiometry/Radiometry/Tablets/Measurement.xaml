@@ -91,7 +91,7 @@
 						</FormattedString>
 					</Label.FormattedText>
 				</Label>
-				<StackLayout Orientation="Horizontal"
+				<!--<StackLayout Orientation="Horizontal"
 							 Margin="30,10,30,10">
 					<Button Text="Измерить"
 							BackgroundColor="#00a86b" 
@@ -100,6 +100,36 @@
 							Margin="0,0,10,0"
 							WidthRequest="145"/>
 					<Button Text="Завершить"
+							BackgroundColor="#00a86b"
+							TextColor="White"
+							FontSize="15"
+							Margin="10,0,10,0"
+							WidthRequest="145"/>
+				</StackLayout>-->
+				<!--<StackLayout Orientation="Horizontal"
+							 Margin="30,10,30,10">
+					<Entry Text="Измерить"
+							BackgroundColor="White" 
+							Placeholder="0"
+							FontSize="15"
+							Margin="0,0,10,0"
+							WidthRequest="145"/>
+					<Button Text="Добавить"
+							BackgroundColor="#00a86b"
+							TextColor="White"
+							FontSize="15"
+							Margin="10,0,10,0"
+							WidthRequest="145"/>
+				</StackLayout>-->
+				<StackLayout Orientation="Horizontal"
+							 Margin="30,10,30,10">
+					<Entry Text="Измерить"
+							BackgroundColor="White" 
+							Placeholder="0"
+							FontSize="15"
+							Margin="0,0,10,0"
+							WidthRequest="145"/>
+					<Button Text="Сохранить"
 							BackgroundColor="#00a86b"
 							TextColor="White"
 							FontSize="15"
