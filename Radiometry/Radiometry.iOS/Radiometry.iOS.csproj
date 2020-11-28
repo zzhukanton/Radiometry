@@ -172,4 +172,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\grid_inprogress.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\map_updated.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\anomalies_updated.jpg" />
+  </ItemGroup>
 </Project>

@@ -28,7 +28,7 @@
 						</FormattedString>
 					</Label.FormattedText>
 				</Label>
-				<Image Source="nir.jpg"
+				<Image Source="map_updated.jpg"
 					   Aspect="AspectFill"
 					   HeightRequest="400"
 					   WidthRequest="300"

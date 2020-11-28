@@ -8,7 +8,7 @@
 		<Frame BackgroundColor="#efdecd" 
 			   Padding="24" 
 			   CornerRadius="0">
-			<Label Text="Первый планшет" 
+			<Label Text="Тестовый планшет" 
 				   HorizontalTextAlignment="Center" 
 				   TextColor="Black" 
 				   FontSize="36"
@@ -16,7 +16,7 @@
 		</Frame>
 		<ScrollView>
 			<StackLayout>
-				<Label FontSize="SubTitle" 
+				<Label FontSize="Subtitle" 
 					   Padding="30,10,30,10"
 					   HorizontalOptions="Center">
 					<Label.FormattedText>
@@ -27,11 +27,11 @@
 						</FormattedString>
 					</Label.FormattedText>
 				</Label>
-				<!--<Image Source="grid_inprogress.png"
+				<Image Source="grid_inprogress.png"
 					   Aspect="AspectFit"
 					   HeightRequest="460"
 					   WidthRequest="300"
-					   HorizontalOptions="Center"/>-->
+					   HorizontalOptions="Center"/>
 				<StackLayout Orientation="Horizontal"
 							 Margin="30,10,30,10">
 					<StackLayout Orientation="Vertical">
@@ -97,14 +97,14 @@
 							BackgroundColor="#00a86b" 
 							TextColor="White"
 							FontSize="15"
-							Margin="0,0,10,0"
+							Margin="0,0,10,20"
 							WidthRequest="145"/>
 					<Button Text="Завершить"
 							x:Name="Finish"
 							BackgroundColor="#00a86b"
 							TextColor="White"
 							FontSize="15"
-							Margin="10,0,10,0"
+							Margin="10,0,10,20"
 							WidthRequest="145"
 							Clicked="Finish_Clicked"/>
 				</StackLayout>
