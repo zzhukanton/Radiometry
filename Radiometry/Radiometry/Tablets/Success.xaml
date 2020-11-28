@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Radiometry.Success"
+			 BackgroundColor="#efdecd"
+			 NavigationPage.HasNavigationBar="false">
+
+	<StackLayout>
+		<Frame BackgroundColor="#efdecd"
+			   Padding="24" 
+			   CornerRadius="0">
+			<Label Text="Новый планшет" 
+				   HorizontalTextAlignment="Center" 
+				   TextColor="Black" 
+				   FontSize="36"/>
+		</Frame>
+		<Label Text="Данные планшета записаны успешно!" 
+			   FontSize="Title" 
+			   Padding="30,20,30,0"
+			   TextColor="Black"
+			   HorizontalTextAlignment="Center"/>
+		<Button Text="Результаты"
+				x:Name="ResultsButton"
+				BackgroundColor="#00a86b" 
+				TextColor="White"
+				Margin="30,50,30,10"
+				FontSize="15"
+				Clicked="ResultsButton_Clicked"/>
+		<Button Text="Главная"
+				x:Name="HomeButton"
+				BackgroundColor="#00a86b" 
+				TextColor="White"
+				Margin="30,10,30,10"
+				FontSize="15"
+				Clicked="HomeButton_Clicked"/>
+		<Label Text="Вы можете посмотреть данные по планшету позже. Как только обработка данных будет завершена, вы увидите ваш планшет в списке всех планшетов с пометкой Обработка завершена." 
+			   FontSize="Subtitle" 
+			   Padding="30,20,30,0"
+			   TextColor="Black"/>
+	</StackLayout>
+</ContentPage>

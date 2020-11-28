@@ -51,6 +51,10 @@
 				</FormattedString>
 			</Label.FormattedText>
 		</Label>
+		<Label Text="Логин или пароль не указаны!" 
+			   FontSize="Subtitle" 
+			   TextColor="Red"
+			   Padding="30,10,30,0"/>
 		<Button x:Name="CreateButton"
 				Text="Создать"
 				BackgroundColor="#00a86b" 

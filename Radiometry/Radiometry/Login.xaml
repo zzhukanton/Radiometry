@@ -34,6 +34,10 @@
 			   Margin="30,10,30,10" 
 			   BackgroundColor="White" 
 			   ClearButtonVisibility="WhileEditing"/>
+		<!--<Label Text="Логин или пароль не указаны!" 
+			   FontSize="Title" 
+			   TextColor="Red"
+			   Padding="30,10,30,0"/>-->
 		<Button x:Name="EnterButton"
 				Text="Войти" 
 				BackgroundColor="#00a86b" 

@@ -38,7 +38,7 @@
 								<StackLayout Orientation="Horizontal"
 											 Padding="5,5,5,5"
 											 VerticalOptions="CenterAndExpand">
-									<Label Text="Первый планшет"
+									<Label Text="Тестовый планшет"
 										   FontSize="20"
 										   HorizontalOptions="StartAndExpand"
 										   TextColor="Black"/>
@@ -54,7 +54,7 @@
 								<StackLayout Orientation="Horizontal"
 											 Padding="5,5,5,5"
 											 VerticalOptions="CenterAndExpand">
-									<Label Text="Второй какой-то"
+									<Label Text="Тестовый 2"
 										   FontSize="20"
 										   HorizontalOptions="StartAndExpand"
 										   TextColor="Black"/>
@@ -72,13 +72,30 @@
 								<StackLayout Orientation="Horizontal"
 											 Padding="5,5,5,5"
 											 VerticalOptions="CenterAndExpand">
-									<Label Text="Тест 3"
+									<Label Text="Тестовый 3"
 										   FontSize="20"
 										   HorizontalOptions="StartAndExpand"
 										   TextColor="Black"/>
 									<Button Text="Открыть"
 											BackgroundColor="#00a86b" 
 											TextColor="White"
+											HorizontalOptions="EndAndExpand"/>
+								</StackLayout>
+							</ViewCell>
+						</TableSection>
+						<TableSection>
+							<ViewCell>
+								<StackLayout Orientation="Horizontal"
+											 Padding="5,5,5,5"
+											 VerticalOptions="CenterAndExpand">
+									<Label Text="Тестовый 4"
+										   FontSize="20"
+										   HorizontalOptions="StartAndExpand"
+										   TextColor="Black"/>
+									<Button Text="Обрабатывается"
+											BackgroundColor="#00a86b" 
+											TextColor="White"
+											IsEnabled="False"
 											HorizontalOptions="EndAndExpand"/>
 								</StackLayout>
 							</ViewCell>

@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Radiometry
@@ -13,6 +8,11 @@ namespace Radiometry
 		public Measurement()
 		{
 			InitializeComponent();
+		}
+
+		private async void Finish_Clicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new Success());
 		}
 	}
 }

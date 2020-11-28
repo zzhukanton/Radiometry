@@ -23,6 +23,9 @@
     <Compile Update="Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Tablets\Success.xaml.cs">
+      <DependentUpon>Success.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Tablets\Measurement.xaml.cs">
       <DependentUpon>Measurement.xaml</DependentUpon>
     </Compile>
