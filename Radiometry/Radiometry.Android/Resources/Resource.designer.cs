@@ -8388,22 +8388,25 @@ namespace Radiometry.Droid
 			public const int profile = 2131165310;
 			
 			// aapt resource value: 0x7F07007F
-			public const int red_dot = 2131165311;
+			public const int profile_updated = 2131165311;
 			
 			// aapt resource value: 0x7F070080
-			public const int refresh = 2131165312;
+			public const int red_dot = 2131165312;
 			
 			// aapt resource value: 0x7F070081
-			public const int shovel = 2131165313;
+			public const int refresh = 2131165313;
 			
 			// aapt resource value: 0x7F070082
-			public const int tooltip_frame_dark = 2131165314;
+			public const int shovel = 2131165314;
 			
 			// aapt resource value: 0x7F070083
-			public const int tooltip_frame_light = 2131165315;
+			public const int tooltip_frame_dark = 2131165315;
 			
 			// aapt resource value: 0x7F070084
-			public const int yellow_dot = 2131165316;
+			public const int tooltip_frame_light = 2131165316;
+			
+			// aapt resource value: 0x7F070085
+			public const int yellow_dot = 2131165317;
 			
 			static Drawable()
 			{

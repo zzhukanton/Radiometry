@@ -136,5 +136,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\anomalies_updated.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\profile_updated.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
