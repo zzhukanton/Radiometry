@@ -1,11 +1,17 @@
-﻿using System;
+﻿using Radiometry.Authorization.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Radiometry.Authorization.Repository
 {
-	interface IUserCosmosDbRepository
+	public interface IUserCosmosDbRepository
 	{
+		Task<IEnumerable<User>> GetItemsAsync(string query);
+		Task<User> GetItemAsync(string id);
+		Task AddItemAsync(User item);
+		Task UpdateItemAsync(string id, User item);
+		Task DeleteItemAsync(string id);
 	}
 }

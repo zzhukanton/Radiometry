@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Radiometry.Authorization.Models;
+using Radiometry.Authorization.Repository;
 using Radiometry.Authorization.Services;
 
 namespace Radiometry.Authorization
@@ -19,6 +20,9 @@ namespace Radiometry.Authorization
 
 		public void ConfigureServices(IServiceCollection services)
 		{
+			services.AddSingleton<IUserCosmosDbRepository>(
+				UserCosmosDbInitializer.InitializeCosmosClientInstanceAsync(Configuration.GetSection("CosmosDb")).GetAwaiter().GetResult());
+
 			string connection = Configuration.GetConnectionString("DefaultConnection");
 			services.AddDbContext<RadiometryUserContext>(options =>
 				options.UseSqlServer(connection));
