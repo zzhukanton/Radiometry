@@ -10,8 +10,8 @@ namespace Radiometry.Authorization.Repository
 	{
         public static async Task<UserCosmosDbRepository> InitializeCosmosClientInstanceAsync(IConfigurationSection configurationSection)
         {
-            string databaseName = configurationSection.GetSection("DatabaseName").Value;
-            string containerName = configurationSection.GetSection("ContainerName").Value;
+            string databaseName = configurationSection.GetSection("Radiometry").Value;
+            string containerName = configurationSection.GetSection("Users").Value;
             string account = configurationSection.GetSection("Account").Value;
             string key = configurationSection.GetSection("Key").Value;
             Microsoft.Azure.Cosmos.CosmosClient client = new Microsoft.Azure.Cosmos.CosmosClient(account, key);

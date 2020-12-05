@@ -24,11 +24,6 @@ namespace Radiometry.Authorization.Repository
             await this._container.CreateItemAsync<Models.User>(item, new PartitionKey(item.Id));
         }
 
-        public async Task DeleteItemAsync(string id)
-        {
-            await this._container.DeleteItemAsync<Models.User>(id, new PartitionKey(id));
-        }
-
         public async Task<Models.User> GetItemAsync(string id)
         {
             try
@@ -40,7 +35,6 @@ namespace Radiometry.Authorization.Repository
             {
                 return null;
             }
-
         }
 
         public async Task<IEnumerable<Models.User>> GetItemsAsync(string queryString)
@@ -55,11 +49,6 @@ namespace Radiometry.Authorization.Repository
             }
 
             return results;
-        }
-
-        public async Task UpdateItemAsync(string id, Models.User item)
-        {
-            await this._container.UpsertItemAsync<Models.User>(item, new PartitionKey(id));
         }
     }
 }

@@ -11,7 +11,5 @@ namespace Radiometry.Authorization.Repository
 		Task<IEnumerable<User>> GetItemsAsync(string query);
 		Task<User> GetItemAsync(string id);
 		Task AddItemAsync(User item);
-		Task UpdateItemAsync(string id, User item);
-		Task DeleteItemAsync(string id);
 	}
 }

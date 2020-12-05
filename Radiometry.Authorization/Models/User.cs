@@ -4,7 +4,7 @@ using System;
 
 namespace Radiometry.Authorization.Models
 {
-	[Bind("")]
+	[Bind("id, login, password, organization, dateRegistered")]
 	public class User
 	{
 		[JsonProperty("id")]
